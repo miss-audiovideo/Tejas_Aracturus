@@ -1,0 +1,22 @@
+.compthree-overview-head{
+    font-size:3.1rem;
+    margin: 2rem  0;
+
+    color:#ff0000;
+    font-weight: 700;
+}
+.compthree-overview-para{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-align: center !important;
+
+}
+
+
+/* .compthree-overview-image{
+    margin: 2rem 1rem;
+    width: 90%;
+} */
+.hero-body{
+    margin-top: 0 !important;
+}
