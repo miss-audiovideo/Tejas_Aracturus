@@ -2,21 +2,25 @@
   transition: all 0.3s ease;
   -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
-  opacity: 0;
+  opacity: 1;
+  margin-top: 50px;
+  display: flex;
+  text-align:center;
+  justify-content: center;
 }
 
 .slide button {
   transition: all 0.3s ease;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
-  opacity: 0;
+  opacity: 1;
 }
 
 .slide p {
   transition: all 0.3s ease;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
-  opacity: 0;
+  opacity: 1;
 }
 
 .slide section * {

@@ -11,6 +11,7 @@ import Trendius from "./Components/Trendius";
 import Career from "./Components/Career";
 import Acoustics from "./Engineering/Acoustics";
 import Balancing from "./Plantmore/Balancing";
+import "animate.css";
 
 function App() {
   return (
