@@ -10,14 +10,7 @@ class Service extends React.Component {
     render() {
         return (
 
-// <!--================ Start Packages Service Area =================-->
-<div class="container" style={{backgroundColor:"black"}}>
-  <div class="notification is-primary" style={{backgroundColor:"black"}}>
-    <h1 
-    style={{color:"white",fontFamily:"cursive",fontSize:"70px"}}>
-        Why choose Us</h1>
-     </div>
-</div>
+<div></div>
 
 );
 }

@@ -11,11 +11,7 @@ function Intergrity() {
   return ( 
     <div>
     <Banner />
-    <Service />
-    <Choose />
-    <Project />
-    <Growth />
-    <Feedback />
+    
     </div>
   );
 }

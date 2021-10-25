@@ -11,11 +11,7 @@ function Surge() {
   return ( 
     <div>
     <Banner />
-    <Service />
-    <Choose />
-    <Project />
-    <Growth />
-    <Feedback />
+    
     </div>
   );
 }
