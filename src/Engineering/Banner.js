@@ -1,5 +1,5 @@
 import React from 'react';
-import next from './img/next.png'
+import eng from './img/eng.jpg'
 import banner from './img/banner/banner.png'
 
 class Banner extends React.Component {
@@ -8,7 +8,7 @@ class Banner extends React.Component {
 
 
             // <!--================ Start banner section =================-->  
-            < section class="home-banner-area relative" >
+           /* < section class="home-banner-area relative" >
                 <div class="container-fluid">
                     <div class="row d-flex align-items-center justify-content-center">
                         <div class="header-right col-lg-6 col-md-6">
@@ -73,7 +73,31 @@ class Banner extends React.Component {
                 </div>
             </section >        
 // <!--================ End banner section =================-->
+*/
 
+
+<section class="hero is-medium is-link dark">
+  <div class="hero-body" style={{backgroundColor:"black"}}>
+  <div class="container is-fluid" style={{backgroundColor:"black"}}>
+  <div class="notification is-primary" style={{backgroundColor:"black"}}>
+  <div class="columns" style={{backgroundColor:"black"}}>
+  <div class="column">
+    <h1 style={{color:"#ff0000",fontSize:"75px"}}>
+    Engineering
+    </h1>
+    
+<p style={{color:"white", fontSize:"18px"}}>Filler text is text that shares some characteristics</p>
+<button class="button is-danger">Danger</button>
+  </div>
+  <div class="column is-two-thirds">
+   <img src={eng} style={{height:"300px"}}/>
+  </div>
+  
+</div>
+  </div>
+</div>
+  </div>
+</section>
 );
 }
 }
