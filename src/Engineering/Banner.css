@@ -212,3 +212,26 @@ article img {
     padding: 0 80px;
   }
 }
+
+@media only screen and (min-width:1024px){
+   .info.top-left h1{
+   transform: translateY(-150%);
+  }
+
+  .info.top-left  h1 span{
+    transform: translateY(-150%);
+  }
+
+  .info.top-left  p{
+    transform: translateY(-200%);
+  }
+}
+@media only screen and (min-width:760px){
+  
+ 
+ 
+ 
+   .info.top-left  p{
+     transform: translateY(-250%);
+   }
+}

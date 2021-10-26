@@ -32,23 +32,14 @@ import "./Banner.css";
       <article>
         <div class="info top-left" >
           <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
-<span style={{color:"white", fontSize:"38px"}}>Innovate and Grow</span></h1>
+<span style={{color:"white", fontSize:"50px"}}>Innovate and Grow</span></h1>
 <p style={{marginRight:"80px",color:"white",marginLeft:"-10px"}}>
   will be always aware of all business and financial news and stay informed<br/> with
 investment tips, market predictions, business advice and guides.</p>
 </div> <img src="https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg" />
       </article>
 
-      <article>
-      <div class="info top-left" >
-          <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
-<span style={{color:"white", fontSize:"38px"}}>Innovate and Grow</span></h1>
-<p style={{marginRight:"80px",color:"white",marginLeft:"-10px"}}>
-  will be always aware of all business and financial news and stay informed<br/> with
-investment tips, market predictions, business advice and guides.</p>
-</div>
-        <img src="https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg" />
-      </article>
+      
 
       <article>
       <div class="info top-left" >
@@ -64,7 +55,7 @@ investment tips, market predictions, business advice and guides.</p>
       <article>
       <div class="info top-left" >
           <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
-<span style={{color:"white", fontSize:"38px"}}>Innovate and Grow</span></h1>
+<span style={{color:"white", fontSize:"59px"}}>Innovate and Grow</span></h1>
 <p style={{marginRight:"80px",color:"white",marginLeft:"-10px"}}>
   will be always aware of all business and financial news and stay informed<br/> with
 investment tips, market predictions, business advice and guides.</p>
@@ -75,7 +66,7 @@ investment tips, market predictions, business advice and guides.</p>
       <article>
       <div class="info top-left" >
           <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
-<span style={{color:"white", fontSize:"38px"}}>Innovate and Grow</span></h1>
+<span style={{color:"white", fontSize:"59px"}}>Innovate and Grow</span></h1>
 <p style={{marginRight:"80px",color:"white",marginLeft:"-10px"}}>
   will be always aware of all business and financial news and stay informed<br/> with
 investment tips, market predictions, business advice and guides.</p>
