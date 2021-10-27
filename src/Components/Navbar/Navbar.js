@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import "./navbar.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
+import "./nav.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Link } from "react-router-dom";
@@ -13,7 +8,7 @@ const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <>
-          <nav className="main-nav">
+      <nav>
         <div className="logo">
           <img
             src={"https://bulma.io/images/bulma-logo.png"}
@@ -21,150 +16,148 @@ const Navbar = () => {
             height="28"
           />
         </div>
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
-          <ul>
-          <div className="navbar-item has-dropdown is-hoverable">
-              <Link to="/products" className="navbar-link">
-                PRODUCTS
-              </Link>
-
-              <div className="navbar-dropdown">
-                <Link to="/products" className="navbar-item toggle-item">
-                  CMX Sentinel
-                </Link>
-                <Link to="/products" className="navbar-item toggle-item">
-                  CMX Stream
-                </Link>
-              </div>
-            </div>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <Link to="trendius" className="navbar-link">
-                Trendius
-              </Link>
-
-              <div className="navbar-dropdown">
-                <Link to="trendius" className="navbar-item toggle-item">
-                  Predictive Analytics
-                </Link>
-                <Link to="trendius" className="navbar-item toggle-item">
+        <label for="btn" class="icon">
+          <span><GiHamburgerMenu /></span>
+        </label>
+        <input type="checkbox" id="btn" />
+        <ul>
+          <li>
+            <label for="btn-1" class="show">PRODUCTS +</label>
+            <Link to="/products">
+              PRODUCTS
+            </Link>
+            <input type="checkbox" id="btn-1" />
+            <ul>
+              <li><Link to="/products">
+                CMX Sentinel
+              </Link></li>
+              <li><Link to="/products">
+                CMX Stream
+              </Link></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">Trendius +</label>
+            <Link to="/trendius">
+              Trendius
+            </Link>
+            <input type="checkbox" id="btn-2" />
+            <ul>
+              <li><Link to="trendius">
+                Predictive Analytics
+              </Link></li><li>
+                <Link to="trendius">
                   Performance Analytics
-                </Link>
-              </div>
-            </div>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <Link to="trendius" className="navbar-link">
-                Engineering
-              </Link>
-
-              <div className="navbar-dropdown">
-                <Link
-                  exact
-                  to="/Engineering_Acoustics"
-                  className="navbar-item  toggle-item"
-                  onClick={() => console.log("tejas")}
-                >
-                  Acoustics & Pulsation
-                </Link>
-
-                <Link to="/Engineering_Acoustics" className="navbar-item toggle-item">
-                  Vibration and Noise
-                </Link>
-                <Link to="/Engineering_Acoustics" className="navbar-item toggle-item">
-                  FMEA
-                </Link>
-
-                <Link to="/Engineering_Acoustics" className="navbar-item toggle-item">
-                  Intergrity & Reliability
-                </Link>
-                <Link to="/Engineering_Acoustics" className="navbar-item toggle-item">
-                  Surge & Fluid Dynamics
-                </Link>
-                <Link to="/Engineering_Acoustics" className="navbar-item toggle-item">
-                  Fitness for Services
-                </Link>
-              </div>
-            </div>
-            <div className="navbar-item has-dropdown is-hoverable">
-              <Link to="/Plantmore_Balancing" className="navbar-link">
-                PlantMORE
-              </Link>
-
-              <div className="navbar-dropdown">
-                <Link to="/Plantmore_Balancing" className="navbar-item toggle-item">
-                  Turnaround
-                </Link>
-                <Link to="/Plantmore_Balancing" className="navbar-item toggle-item">
-                  Balancing & Alignment
-                </Link>
-                <Link to="/Plantmore_Balancing" className="navbar-item toggle-item">
-                  o&M
-                </Link>
-
-                <Link to="/Plantmore_Balancing" className="navbar-item toggle-item">
-                  Commisioning and Startup
-                </Link>
-                <Link to="/Plantmore_Balancing" className="navbar-item toggle-item">
-                  ESP
-                </Link>
-                <Link to="/Plantmore_Balancing" className="navbar-item toggle-item">
-                  Field COndition monitoring
-                </Link>
-              </div>
-            </div>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <Link to="/prespectives" className="navbar-link">
-                Presprctives
-              </Link>
-
-              <div className="navbar-dropdown">
-                <Link to="/prespectives" className="navbar-item toggle-item">
-                  Whitepaper
-                </Link>
-                <Link to="/prespectives" className="navbar-item toggle-item">
+                </Link></li>
+              {/* <li>
+                <label for="btn-3" class="show">More +</label>
+                <a href="#">More <span class="fa fa-plus"></span></a>
+                <input type="checkbox" id="btn-3" />
+                <ul>
+                  <li><a href="#">Submenu-1</a></li>
+                  <li><a href="#">Submenu-2</a></li>
+                  <li><a href="#">Submenu-3</a></li>
+                </ul>
+              </li> */}
+            </ul>
+          </li>
+          <li>
+            <label for="btn-3" class="show">Engineering +</label>
+            <Link to="/engineering">
+              Engineering
+            </Link>
+            <input type="checkbox" id="btn-3" />
+            <ul>
+              <li><Link to="/Engineering_Acoustics">
+                Acoustics & Pulsation
+              </Link></li>
+              <li><Link to="/Engineering_Acoustics">
+                Vibration and Noise
+              </Link></li>
+              <li><Link to="/Engineering_Acoustics">
+                FMEA
+              </Link></li>
+              <li><Link to="/Engineering_Acoustics">
+                Intergrity & Reliability
+              </Link></li>
+              <li><Link to="/Engineering_Acoustics">
+                Surge & Fluid Dynamics
+              </Link></li>
+              <li><Link to="/Engineering_Acoustics">
+                Fitness for Services
+              </Link></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-4" class="show">PlantMORE +</label>
+            <Link to="/Plantmore_Balancing">
+              PlantMORE
+            </Link>
+            <input type="checkbox" id="btn-4" />
+            <ul>
+              <li><Link to="/Plantmore_Balancing">
+                Turnaround
+              </Link></li>
+              <li><Link to="/Plantmore_Balancing">
+                Balancing & Alignment
+              </Link></li>
+              <li><Link to="/Plantmore_Balancing">
+                o&M
+              </Link></li>
+              <li><Link to="/Plantmore_Balancing">
+                Commisioning and Startup
+              </Link></li>
+              <li><Link to="/Plantmore_Balancing">
+                ESP
+              </Link></li>
+              <li><Link to="/Plantmore_Balancing">
+                Field COndition monitoring
+              </Link></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-5" class="show">Presprctives +</label>
+            <Link to="/prespectives">
+              Presprctives
+            </Link>
+            <input type="checkbox" id="btn-5" />
+            <ul>
+              <li><Link to="/prespectives">
+                Whitepaper
+              </Link></li><li>
+                <Link to="/prespectives">
                   resources
-                </Link>
-                <Link to="/prespectives" className="navbar-item toggle-item">
+                </Link></li><li>
+                <Link to="/prespectives">
                   blogs
-                </Link>
-              </div>
-            </div>
-
-            <div className="navbar-item has-dropdown is-hoverable">
-              <Link to="/company" className="navbar-link">
-                Company
-              </Link>
-
-              <div className="navbar-dropdown">
-                <Link to="/company" className="navbar-item toggle-item">
-                  about us
-                </Link>
-                <Link to="/company" className="navbar-item  toggle-item">
-                  leadership
-                </Link>
-                <Link className="navbar-item  toggle-item">policies</Link>
-
-                <Link to="/company" className="navbar-item toggle-item">
-                  sustanibility
-                </Link>
-                <Link to="/company/career" className="navbar-item toggle-item">
-                  careers
-                </Link>
-              </div>
-            </div>
-          </ul>
-        </div>
-
-        <div className="social-media">
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div>
-        </div>
+                </Link></li>
+            </ul>
+          </li>
+          <li>
+            <label for="btn-6" class="show">Company +</label>
+            <Link to="/company">
+              Company
+            </Link>
+            <input type="checkbox" id="btn-6" />
+            <ul>
+              <li><Link to="/company">
+                about us
+              </Link></li>
+              <li><Link to="/company">
+                leadership
+              </Link></li>
+              <li><Link to="/company">
+                policies
+              </Link></li>
+              <li><Link to="/company">
+                sustanibility
+              </Link></li>
+              <li><Link to="/company/career">
+                careers
+              </Link></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </>
   );
