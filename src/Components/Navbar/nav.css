@@ -8,6 +8,7 @@
 }
 nav{
   background:black ;
+  position:fixed;
 }
 nav:after{
   content: '';
