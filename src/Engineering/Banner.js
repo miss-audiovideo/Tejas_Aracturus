@@ -31,7 +31,8 @@ import "./Banner.css";
     <div class="inner">
       <article>
         <div class="info top-left" >
-          <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
+          <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>
+            We help Industries&nbsp;<br/><br/>
 <span style={{color:"white", fontSize:"50px"}}>Innovate and Grow</span></h1>
 <p style={{marginRight:"80px",color:"white",marginLeft:"-10px"}}>
   will be always aware of all business and financial news and stay informed<br/> with
@@ -54,7 +55,7 @@ investment tips, market predictions, business advice and guides.</p>
 
       <article>
       <div class="info top-left" >
-          <h1 style={{color:"orange",marginTop:"390px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
+          <h1 style={{color:"orange",marginTop:"300px",opacity:"1"}}>We help Industries&nbsp;<br/><br/>
 <span style={{color:"white", fontSize:"59px"}}>Innovate and Grow</span></h1>
 <p style={{marginRight:"80px",color:"white",marginLeft:"-10px"}}>
   will be always aware of all business and financial news and stay informed<br/> with
