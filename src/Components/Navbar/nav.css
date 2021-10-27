@@ -6,9 +6,6 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-  background: #f2f2f2;
-}
 nav{
   background:black ;
 }
@@ -47,7 +44,12 @@ nav ul li a{
 nav ul li a:hover{
   color: #ff0000;
   border-radius: 5px;
-  
+
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow:  0 0 5px #ffffff,
+                0 0 10px #ffffff;
+
 }
 nav ul ul li a:hover{
   box-shadow: none;
@@ -55,7 +57,11 @@ nav ul ul li a:hover{
 nav ul ul{
   position: absolute;
   top: 90px;
+
   border-top: 3px solid #ff0000;
+
+  border-top: 3px solid rgb(255, 255, 255);
+
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
@@ -119,7 +125,11 @@ nav ul ul ul li{
     cursor: pointer;
   }
   .show:hover{
+
     color: #ff0000;
+
+    color: rgb(255, 255, 255);
+
   }
   .icon{
     display: block;
