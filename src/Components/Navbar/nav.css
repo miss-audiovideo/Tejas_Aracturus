@@ -10,7 +10,7 @@ body{
   background: #f2f2f2;
 }
 nav{
-  background: #ff0000;
+  background:black ;
 }
 nav:after{
   content: '';
@@ -19,7 +19,7 @@ nav:after{
 }
 nav .logo{
   float: left;
-  color: white;
+  color: #ff0000;
   font-size: 27px;
   font-weight: 600;
   line-height: 70px;
@@ -34,7 +34,7 @@ nav ul{
 nav ul li{
   float: left;
   display: inline-block;
-  background: #ff0000;
+  background: black;
   margin: 0 5px;
 }
 nav ul li a{
@@ -45,10 +45,9 @@ nav ul li a{
   padding: 8px 15px;
 }
 nav ul li a:hover{
-  color: cyan;
+  color: #ff0000;
   border-radius: 5px;
-  box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+  
 }
 nav ul ul li a:hover{
   box-shadow: none;
@@ -56,7 +55,7 @@ nav ul ul li a:hover{
 nav ul ul{
   position: absolute;
   top: 90px;
-  border-top: 3px solid cyan;
+  border-top: 3px solid #ff0000;
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
@@ -120,7 +119,7 @@ nav ul ul ul li{
     cursor: pointer;
   }
   .show:hover{
-    color: cyan;
+    color: #ff0000;
   }
   .icon{
     display: block;
