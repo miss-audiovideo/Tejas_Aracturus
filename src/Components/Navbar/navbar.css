@@ -144,7 +144,7 @@ li {
 }
 
 /* responsive css style  */
-@media (max-width: 998px) {
+@media (max-width: 1024px) {
   .main-nav {
     height: 7rem;
     grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
