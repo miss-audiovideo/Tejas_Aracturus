@@ -263,8 +263,57 @@ article img {
     transform: translateY(-200%);
   }
 }
+
 @media only screen and (min-width: 760px) {
   .info.top-left p {
     transform: translateY(-250%);
   }
 }
+
+@media only screen and (min-width:760px){
+  
+  .info.top-left h1{
+    transform: translateY(-150%);
+   }
+ 
+   .info.top-left  h1 span{
+     transform: translateY(-150%);
+   }
+ 
+   .info.top-left  p{
+     transform: translateY(-250%);
+   }
+}
+@media only screen and (max-width:600px){
+  .info.top-left h1{
+    transform: translateY(-350%);
+    font-size: 24px;
+    margin-left:10px;
+   }
+ 
+   .info.top-left  h1 span{
+     font-size: 24px;
+   }
+ 
+   .info.top-left  p{
+     transform: translateY(-400%);
+   }
+}
+
+@media only screen and (max-width:420px){
+  .info.top-left h1{
+    transform: translateY(-300%);
+   margin-right: 90px;
+   }
+ 
+   .info.top-left  h1 span{
+    font-size: 10px;
+   }
+ 
+   .info.top-left  p{
+     transform: translateY(-430%);
+     font-size:15px;
+     
+   }
+}
+
