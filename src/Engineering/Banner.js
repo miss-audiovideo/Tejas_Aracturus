@@ -5,32 +5,121 @@ import toolthree from "../Engineering/img/banner/toolthree.jpg";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 // import "./Banner.css";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const slides = [
-  { title: "First item", description: "Lorem ipsum", image: toolone },
-  { title: "Second item", description: "Lorem ipsum", image: tooltwo },
-  { title: "Third item", description: "Lorem ipsum", image: toolthree },
+  {
+    title: "Welcome to all Industrial Business",
+    description: "Natasha Romanoff confronts the darker parts of her ledger  ",
+    image: toolone,
+  },
+  {
+    title: "Captain america ",
+    description:
+      "Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose ofa Super-Soldier serum  ",
+    image: tooltwo,
+  },
+  {
+    title: "Iron Man",
+    description:
+      "After being held captive in an Afghan cave billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil",
+    image: toolthree,
+  },
 ];
 
 const Banner = () => {
   return (
-    <Slider>
-      {slides.map((slide, index) => (
-        <div key={index}>
-          <h2
+    <div>
+      <Slider className="slider-wrapper" autoplay={3000} style={{}}>
+        {slides.map((item, index) => (
+          <div
+            key={index}
+            className="slider-content"
             style={{
-              color: "orange",
+              background: `url('${item.image}')`,
+              // background: "rgba(255,255,255,0.1)",
+              backdropFilter: "blur(15px)",
+              width: "100%",
+              height: "80%",
+              opacity: "0.8",
+              // boxSizing: "border-box",
+              // overflow: "hidden",
+              // objectPosition: "fit-to-display",
             }}
           >
-            {slide.title}
-          </h2>
-          <p>{slide.description}</p>
-          <img src={slide.image}></img>
-        </div>
-      ))}
-    </Slider>
+            <div
+              className="inner"
+              style={{
+                // backgroundColor: "black",
+                width: "600px",
+                // height: "max-content",
+                // boxSizing: "border-box",
+                // overflow: "Hidden",
+              }}
+            >
+              <h1
+                className="animate__animated animate__fadeInUp animate__delay-1s"
+                style={{
+                  marginTop: "150px",
+                  marginLeft: "50px",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  color: "#FBAD1A",
+                  fontSize: "48px",
+                  fontWeight: "bolder",
+                }}
+                // className="title  is-size-1-desktop is-size-3-mobile has-text-weight-bold "
+              >
+                {item.title}
+              </h1>
 
+              <p
+                className="animate__animated animate__fadeInDown animate__delay-1s"
+                style={{
+                  color: "white",
+                  fontSize: "24px",
+                  // background: "rgba(255,255,255,0.1)",
+                  // backdropFilter: "blur(15px)",
+                }}
+                // className="subtitle  is-size-5-desktop is-size-5-mobile has-text-weight-medium"
+              >
+                {item.description}
+              </p>
+
+              {/* <NavLink to={item.path} exact> */}
+              {/* button is-rounded is-primary */}
+              <button
+                className="animate__animated animate__fadeInLeft animate__delay-1s"
+                style={{
+                  background: "#FBAD1A",
+                  color: "white",
+                  textDecoration: "none",
+                  marginLeft: "100px",
+                  padding: "10px",
+                  // borderRadius: "10px",
+                }}
+              >
+                Learn More
+              </button>
+              <button
+                className="animate__animated animate__fadeInRight animate__delay-2s"
+                style={{
+                  background: "#072D4D",
+                  color: "white",
+                  textDecoration: "none",
+                  marginLeft: "10px",
+                  padding: "10px",
+                  // borderRadius: "10px",
+                }}
+              >
+                View Services
+              </button>
+              {/* </NavLink> */}
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
     //       <div>
     //         <div class="wrapper">
     //           <input checked type="radio" name="slider" id="slide1" />
