@@ -7,8 +7,10 @@
   font-family: 'Poppins', sans-serif;
 }
 nav{
+  margin-top: -70px;
   background:black ;
-  position:fixed;
+  position: fixed;
+  width: 100%;
 }
 nav:after{
   content: '';
