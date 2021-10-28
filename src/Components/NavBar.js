@@ -165,7 +165,7 @@ export default function NavBar() {
                 Contact Us
               </Link>
 
-              {/* <div className="navbar-dropdown">
+              <div className="navbar-dropdown">
                 <Link to="/company" className="navbar-item">
                   about us
                 </Link>
@@ -180,7 +180,7 @@ export default function NavBar() {
                 <Link to="/company/career" className="navbar-item">
                   careers
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
 
