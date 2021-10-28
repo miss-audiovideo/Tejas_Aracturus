@@ -4,13 +4,14 @@
   padding: 0;
   user-select: none;
   box-sizing: border-box;
+  
   font-family: 'Poppins', sans-serif;
 }
 nav{
   margin-top: -70px;
   background:black ;
   position: fixed;
-  width: 100%;
+  width: 100%;z-index: 20000;
 }
 nav:after{
   content: '';
