@@ -160,6 +160,28 @@ export default function NavBar() {
                 </Link>
               </div>
             </div>
+            <div className="navbar-item has-dropdown is-hoverable">
+              <Link to="/Contact" className="navbar-link">
+                Contact Us
+              </Link>
+
+              {/* <div className="navbar-dropdown">
+                <Link to="/company" className="navbar-item">
+                  about us
+                </Link>
+                <Link to="/company" className="navbar-item">
+                  leadership
+                </Link>
+                <Link className="navbar-item">policies</Link>
+
+                <Link to="/company" className="navbar-item">
+                  sustanibility
+                </Link>
+                <Link to="/company/career" className="navbar-item">
+                  careers
+                </Link>
+              </div> */}
+            </div>
           </div>
 
           <div className="navbar-end">

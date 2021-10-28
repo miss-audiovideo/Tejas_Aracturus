@@ -89,7 +89,7 @@ const Banner = () => {
               {/* <NavLink to={item.path} exact> */}
               {/* button is-rounded is-primary */}
               <button
-                className="animate__animated animate__fadeInLeft animate__delay-1s"
+                className="animate__animated animate__fadeInLeft animate__delay-1.5s"
                 style={{
                   background: "#FBAD1A",
                   color: "white",
