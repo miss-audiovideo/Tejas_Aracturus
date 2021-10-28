@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import "../app.css";
-// import { db } from "../firebase";
+import { db } from "./firebase";
 import "./Contact.css";
 
 const Contact = () => {
@@ -14,20 +13,20 @@ const Contact = () => {
     e.preventDefault();
     setLoader(true);
 
-    // db.collection("contacts")
-    //   .add({
-    //     name: name,
-    //     email: email,
-    //     message: message,
-    //   })
-    //   .then(() => {
-    //     setLoader(false);
-    //     alert("Your message has been submitted👍");
-    //   })
-    //   .catch((error) => {
-    //     alert(error.message);
-    //     setLoader(false);
-    //   });
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted👍");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
 
     setName("");
     setEmail("");

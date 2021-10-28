@@ -163,6 +163,14 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
+          <li>
+            <label for="btn-1" class="show">Contact Us</label>
+            <Link to="/contact">
+              Contact
+            </Link>
+            <input type="checkbox" id="btn-1" />
+           
+          </li>
         </ul>
       </nav>
     </>
